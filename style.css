@@ -56,7 +56,6 @@
 }
 #bayu{
   width: 100%;
-  height: 100%;
 }
 
 .kerja{
@@ -82,11 +81,12 @@ section {
   background-size: cover; /* agar gambar latar belakang memenuhi seluruh area section */
   background-repeat: no-repeat; /* agar gambar latar belakang tidak berulang */
   color: black;
-  opacity: 0.9;
+  opacity: 0.75;
 }
 
 body{
   background-image: url('image/—Pngtree—white\ simple\ asymmetry\ abstract\ cv_1346365.png');
+  opacity: 0.93;
 }
 .table th{
   color: black;
