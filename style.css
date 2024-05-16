@@ -70,8 +70,9 @@ p li{
   font-size: 30px;
 }
 .btn{
-  background-color: black;
-  color: white;
+  /* background-color: rgb(230, 139, 65); */
+  background-image: url("image/lovepik-paper-texture-background-image_400533814.jpg");
+  color: black;
   border-radius: 20px solid gray ;
   margin-top: 50px;
 }
@@ -81,11 +82,13 @@ section {
   background-size: cover; /* agar gambar latar belakang memenuhi seluruh area section */
   background-repeat: no-repeat; /* agar gambar latar belakang tidak berulang */
   color: black;
-  opacity: 0.75;
+  opacity: 0.95;
 }
 
 body{
-  background-image: url('image/—Pngtree—white\ simple\ asymmetry\ abstract\ cv_1346365.png');
+  background-image: url('image/lovepik-paper-texture-background-image_400533814.jpg');
+  background-size: cover; /* agar gambar latar belakang memenuhi seluruh area section */
+  background-repeat: no-repeat;
   opacity: 0.93;
 }
 .table th{
