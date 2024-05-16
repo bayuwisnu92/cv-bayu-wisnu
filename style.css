@@ -1,0 +1,150 @@
+ /* Menyesuaikan warna latar belakang dan teks */
+ .navbar-dark .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f8f9fa !important;
+}
+.navbar-dark .navbar-brand {
+  color: #ffffff !important;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-color: #ffffff;
+}
+.navbar-dark .navbar-toggler {
+  border-color: #ffffff;
+}
+.navbar-dark .navbar-toggler:focus,
+.navbar-dark .navbar-toggler:active {
+  outline: none;
+  border-color: #ffffff;
+}
+#table1 td{
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+.bold{
+  font-weight: 700;
+}
+.navbar{
+  top: 0;
+  position: sticky;
+  z-index: +1;
+  opacity: 0.6;
+}
+.biodata {
+  margin-top: 70px;
+   /* Warna border */
+ /* Membuat border menjadi lebih melengkung */
+  padding: 20px; /* Memberikan jarak antara konten dan border */
+}
+.keterampilan{
+  margin-top: 70px;
+  padding: 20px; /* Memberikan jarak antara konten dan border */
+}
+.lampiran{
+  margin-top: 70px;
+   /* Warna border */
+ /* Membuat border menjadi lebih melengkung */
+  padding: 20px; /* Memberikan jarak antara konten dan border */
+}
+.biodata  li{
+  margin: 20px 20px;
+  font-weight: 700;
+}
+#bayu{
+  width: 100%;
+  height: 100%;
+}
+.pend{
+  margin-top: 70px;
+   /* Warna border */
+ /* Membuat border menjadi lebih melengkung */
+  padding: 20px; /* Memberikan jarak antara konten dan border */
+}
+.kerja{
+  margin-top: 70px;
+   /* Warna border */
+ /* Membuat border menjadi lebih melengkung */
+  padding: 20px; /* Memberikan jarak antara konten dan border */
+  margin-bottom: 100px;
+}
+.kolom{
+  margin-top: 20px;
+}
+
+p li{
+  font-size: 30px;
+}
+.btn{
+  background-color: black;
+  color: white;
+  border-radius: 20px solid gray ;
+  margin-top: 50px;
+}
+
+section {
+  background-image: url('image/lovepik-paper-texture-background-image_400533814.jpg');
+  background-size: cover; /* agar gambar latar belakang memenuhi seluruh area section */
+  background-repeat: no-repeat; /* agar gambar latar belakang tidak berulang */
+  color: black;
+}
+
+body{
+  background-image: url('image/—Pngtree—white\ simple\ asymmetry\ abstract\ cv_1346365.png');
+}
+.table th{
+  color: black;
+}
+.table td{
+  color: black;
+}
+.skill-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.bar::after {
+  content: attr(data-skill);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #767a7e; /* Warna batang */
+  width: var(--skill-level); /* Tingkat keterampilan */
+}
+
+  @media only screen and (max-width: 600px) {
+   .navbar-nav{
+    margin-left: 0px;
+
+   }
+   section::before{
+    left: -10px;
+    font-size: 64px;
+   }
+   #contact{
+    display: flex;
+    flex-direction: column;
+   }
+   #gambar{
+    width: 50%;
+   }
+ } 
