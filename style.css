@@ -38,15 +38,17 @@
  /* Membuat border menjadi lebih melengkung */
   padding: 20px; /* Memberikan jarak antara konten dan border */
 }
-.keterampilan{
-  margin-top: 70px;
-  padding: 20px; /* Memberikan jarak antara konten dan border */
+.keterampilan{  
+  margin-top: 50px;
+  padding: 20px; 
 }
 .lampiran{
-  margin-top: 70px;
-   /* Warna border */
- /* Membuat border menjadi lebih melengkung */
-  padding: 20px; /* Memberikan jarak antara konten dan border */
+  margin-top: 50px;
+  padding: 20px; 
+}
+.pend{
+  margin-top: 50px;
+  padding: 20px; 
 }
 .biodata  li{
   margin: 20px 20px;
@@ -56,18 +58,10 @@
   width: 100%;
   height: 100%;
 }
-.pend{
-  margin-top: 70px;
-   /* Warna border */
- /* Membuat border menjadi lebih melengkung */
-  padding: 20px; /* Memberikan jarak antara konten dan border */
-}
+
 .kerja{
-  margin-top: 70px;
-   /* Warna border */
- /* Membuat border menjadi lebih melengkung */
-  padding: 20px; /* Memberikan jarak antara konten dan border */
-  margin-bottom: 100px;
+  margin-top: 50px;
+  padding: 20px; 
 }
 .kolom{
   margin-top: 20px;
@@ -88,6 +82,7 @@ section {
   background-size: cover; /* agar gambar latar belakang memenuhi seluruh area section */
   background-repeat: no-repeat; /* agar gambar latar belakang tidak berulang */
   color: black;
+  opacity: 0.9;
 }
 
 body{
