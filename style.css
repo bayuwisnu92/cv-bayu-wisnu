@@ -182,6 +182,16 @@ body{
   transform: translateY(-50%);
   left: 5px;
 }
+.table th, .table td {
+  vertical-align: middle;
+  border: none; /* Remove borders from table cells */
+}
+.bold {
+  font-weight: bold;
+}
+.table {
+  border: none; /* Remove border from table */
+}
 
 .bar::before {
   content: "";
