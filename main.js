@@ -1,70 +1,44 @@
-// function toggledetail(e){
-//     console.log(e)
-//     // const detail=$(item).children('.about-item-detail')
-
-//     // $(item).slideToggle()
-// const target=$(e.target)
-// const item=$(target).parents('.about-item')
-// console.log($(itam).children())
-    
-// }
-
-// $(document).ready(function(){
-//     $('.btn.button').click(function(){
-//       $('.about-item-detail').toggle();
-      
-//     });
-//     $('.btn.button-2').click(function(){
-//       $('.about-item-detail-2').toggle();
-
-//     });
-//     $('.btn.button-3').click(function(){
-//       $('.about-item-detail-3').toggle();
-
-//     });
-    
-//   });
-
 $(document).ready(function(){
-  $('.btn.button').click(function(){
-    $('.about-item-detail').toggle();
-    $(this).text(function(i, text){
-      return text === "last Info" ? "more Info." : "last Info";
-    });
-   
-  });
-  
+  // Tambahkan smooth scrolling ke semua tautan dalam navbar
+  $(".navbar a").on('click', function(event) {
+    // Pastikan this.hash memiliki nilai sebelum menangani navigasi
+    if (this.hash !== "") {
+      // Mencegah tindakan default tautan
+      event.preventDefault();
 
-  $('.btn.button-2').click(function(){
-    $('.about-item-detail-2').toggle();
-    $(this).text(function(i, text){
-      return text === "last Info" ? "more Info" : "last Info";
-    });
-  });
+      // Mengambil hash (#) dari tautan yang diklik
+      var hash = this.hash;
 
-  $('.btn.button-3').click(function(){
-    $('.about-item-detail-3').toggle();
-    $(this).text(function(i, text){
-      return text === "last Info" ? "more Info" : "last Info";
-    });
+      // Menggunakan metode animate() jQuery untuk menambahkan smooth page scroll
+      // Durasi animasi adalah 800 milidetik
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        // Tambahkan hash (#) ke URL setelah selesai menggulir (default klik)
+        window.location.hash = hash;
+      });
+    } // Akhir if
   });
 });
 
-function onFromSubmit(e){
-  e.preventDefault()
-  const email = $('#inp_email')
-  const subject = $('#inp_subject')
-  const message = $('#inp_message')
-  if (!$(email).val()){
-    alert('email wajib diiisi')
-  } else if(!$(subject).val()){
-    alert('subject wajib diisi')
-  }else if (!$(message).val()){
-    alert("message wajib diisi")
-  }else{
-    alert('form submite')
-    console.log('berhasil')
+  // Fungsi untuk menambah atau menghapus kelas 'sticky' pada navbar
+  function toggleStickyNavbar() {
+    var lastScrollTop = 0;
+    $(window).scroll(function() {
+      var currentScroll = $(this).scrollTop();
+      if (currentScroll > lastScrollTop) {
+        // Scroll ke bawah
+        $('.navbar').removeClass('sticky');
+      } else {
+        // Scroll ke atas
+        $('.navbar').addClass('sticky');
+      }
+      lastScrollTop = currentScroll;
+    });
   }
 
-}
+  // Panggil fungsi saat dokumen siap
+  $(document).ready(function() {
+    toggleStickyNavbar();
+  });
 

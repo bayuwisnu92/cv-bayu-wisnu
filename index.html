@@ -7,13 +7,17 @@
 <!-- Memuat Bootstrap CSS -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-
+  <audio autoplay loop>
+    <source src="018_SURAT_AL_KAHF.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Curriculum Vitae</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" style="background-color: rgb(144, 121, 245);opacity: 12;"></span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+    <span class="navbar-toggler-icon" ></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,6 +36,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#lampiran">Lampiran</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://wa.me/6283806620512">Contact</a>
       </li>
     </ul>
   </div>
@@ -232,28 +239,28 @@
       <H3>KTP</H3>
       <img src="image/ktp.jpg" alt="" srcset="" width="100px" height="60px">
     </div>
-    <div class="col-6 down"><a class="btn" href="image/ktp.jpg" download>DOWNLOAD</a></div>
+    <div class="col-6 down"><a class="btn" href="https://wa.me/6283806620512" download>DOWNLOAD</a></div>
   </div>
   <div class="row kolom d-flex align-items-center">
     <div class="col-6">
       <H3>KARTU KELUARGA</H3>
       <img src="image/kartu keluarga.jpg" alt="" srcset="" width="100px" height="60px">
     </div>
-    <div class="col-6 down"><a class="btn" href="image/kartu keluarga.jpg" download>DOWNLOAD</a></div>
+    <div class="col-6 down"><a class="btn" href="https://wa.me/6283806620512" download>DOWNLOAD</a></div>
   </div>
   <div class="row kolom d-flex align-items-center">
     <div class="col-6">
       <H3>IJAZAH</H3>
       <img src="image/ijazah.jpg" alt="" srcset="" width="100px" height="60px">
     </div>
-    <div class="col-6 down"><a class="btn" href="image/ijazah.jpg" download>DOWNLOAD</a></div>
+    <div class="col-6 down"><a class="btn" href="https://wa.me/6283806620512" download>DOWNLOAD</a></div>
   </div>
   <div class="row kolom d-flex align-items-center">
     <div class="col-6">
       <H3>PHOTO</H3>
       <img src="image/photo.JPG" alt="" srcset="" width="60px" height="100px">
     </div>
-    <div class="col-6 down"><a class="btn" href="image/photo.JPG" download>DOWNLOAD</a></div>
+    <div class="col-6 down"><a class="btn" href="https://wa.me/6283806620512" download>DOWNLOAD</a></div>
   </div>
 </section>
 
@@ -261,31 +268,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-  // Menangani klik pada tautan navigasi dan mengaktifkan perpindahan lambat
-  $(document).ready(function(){
-    // Tambahkan smooth scrolling ke semua tautan dalam navbar
-    $(".navbar a").on('click', function(event) {
-      // Pastikan this.hash memiliki nilai sebelum menangani navigasi
-      if (this.hash !== "") {
-        // Mencegah tindakan default tautan
-        event.preventDefault();
-
-        // Mengambil hash (#) dari tautan yang diklik
-        var hash = this.hash;
-
-        // Menggunakan metode animate() jQuery untuk menambahkan smooth page scroll
-        // Durasi animasi adalah 800 milidetik
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          // Tambahkan hash (#) ke URL setelah selesai menggulir (default klik)
-          window.location.hash = hash;
-        });
-      } // Akhir if
-    });
-  });
-</script>
-
+<script src="main.js"></script>
 </body>
 </html>

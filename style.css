@@ -26,12 +26,30 @@
 .bold{
   font-weight: 700;
 }
-.navbar{
+/* .navbar{
   top: 0;
   position: sticky;
   z-index: +1;
-  opacity: 0.6;
+  opacity: 0.4;
+} */
+.navbar-toggler-icon{
+ background-color: white;
+  /* background-size: cover; /* agar gambar latar belakang memenuhi seluruh area section */
+ /* background-repeat: no-repeat;  */
+ opacity: 0.6;
 }
+.sticky {
+  opacity: 0.4;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* pastikan navbar muncul di atas konten */
+}
+
+.navbar {
+  transition: top 0.3s; /* efek transisi saat navbar berubah posisi */
+}
+
 .biodata {
   margin-top: 70px;
    /* Warna border */
