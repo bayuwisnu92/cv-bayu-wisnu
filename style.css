@@ -9,10 +9,10 @@
   color: #ffffff !important;
 }
 .navbar-dark .navbar-toggler-icon {
-  background-color: #ffffff;
+  background-color: #e46115;
 }
 .navbar-dark .navbar-toggler {
-  border-color: #ffffff;
+  border-color: #b44809;
 }
 .navbar-dark .navbar-toggler:focus,
 .navbar-dark .navbar-toggler:active {
@@ -85,8 +85,9 @@
 }
 .kolom{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
+  
+  /* justify-content: space-between; */
 }
 
 p li{
@@ -98,6 +99,10 @@ p li{
   color: black;
   border-radius: 20px solid gray ;
   margin-top: 50px;
+}
+.imager{
+  width: 100%;
+  height: 100%;
 }
 .floating-btn {
   position: fixed;
@@ -118,12 +123,22 @@ p li{
   z-index: 1000;
 }
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 3px;
+  position: absolute;
+    width: 200px;
+    
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 5px;
 }
 .floating-btn img {
   width: 30px;
   height: 30px;
+}
+.down{
+  margin-left: 150px;
 }
 
 section {
@@ -174,9 +189,18 @@ body{
   top: 0;
   left: 0;
   height: 100%;
-  background-color: #767a7e; /* Warna batang */
+  background-color: #e4a76e; /* Warna batang */
   width: var(--skill-level); /* Tingkat keterampilan */
 }
+.navbar-nav{
+  margin-left: 300px;
+}
+@media only screen and (max-width: 417px){
+  .navbar-nav{
+    margin-left: 0px;
+
+   }
+ }
 
   @media only screen and (max-width: 600px) {
    .navbar-nav{
@@ -191,7 +215,58 @@ body{
     display: flex;
     flex-direction: column;
    }
-   #gambar{
-    width: 50%;
+   .imager{
+    width: 30%;
+    margin-bottom: 50px;
+   }
+   .carousel-caption{
+    width: 300px;
+   }
+   .down{
+    margin-left: 0px;
    }
  } 
+ @media only screen and (max-width: 700px){
+  .down{
+    margin-left: 0px;
+   }
+   .imager{
+    width: 30%;
+    margin-bottom: 70px;
+   }
+ }
+ @media only screen and (max-width: 800px){
+  .down{
+    margin-left: 0px;
+   }
+   .imager{
+    width: 30%;
+    margin-bottom: 50px;
+   }
+   .navbar-nav{
+    margin-left: 0px;
+  }
+   
+ }
+ @media only screen and (max-width: 989px){
+  .down{
+    margin-left: 0px;
+   }
+   .navbar-nav{
+    margin-left: 0;
+  }
+ }
+ @media only screen and (max-width: 1000px){
+  .down{
+    margin-left: 0px;
+   }
+   .navbar-nav{
+    margin-left: 100px;
+  }
+ }
+ @media only screen and (max-width: 1200px){
+  
+   .navbar-nav{
+    margin-left: 120px;
+  }
+ }
