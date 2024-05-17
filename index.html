@@ -7,13 +7,37 @@
 <!-- Memuat Bootstrap CSS -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
+<style>
+  /* Style for the floating button */
+  .floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2562d3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .floating-btn img {
+    width: 30px;
+    height: 30px;
+  }
+</style>
 </head>
 <body>
-  <audio autoplay loop>
+  <!-- <audio autoplay loop>
     <source src="018_SURAT_AL_KAHF.mp3" type="audio/mp3">
     Your browser does not support the audio element.
-  </audio>
+  </audio> -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Curriculum Vitae</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
@@ -232,37 +256,43 @@
       </table>
 </section>
 
-<section id="lampiran" class="lampiran container">
+<section id="lampiran" class="lampiran container ">
   <h1>V.Lampiran</h1>
-  <div class="row kolom d-flex align-items-center">
-    <div class="col-6">
+  <div class="row kolom ">
+    <div class="col-6 col-md-10">
       <H3>KTP</H3>
-      <img src="image/ktp.jpg" alt="" srcset="" width="100px" height="60px">
+      <img src="image/ktpbaru.png" alt="" srcset="" width="100px" height="60px">
+
     </div>
-    <div class="col-6 down"><a class="btn" href="https://wa.me/6283806620512" download>DOWNLOAD</a></div>
+    <div class="col down"><a class="btn" href="https://wa.me/6283806620512?text=Izin%20minta%20KTP%20nya?%3F" download>DOWNLOAD</a></div>
   </div>
-  <div class="row kolom d-flex align-items-center">
-    <div class="col-6">
+  <div class="row kolom ">
+    <div class="col-6 col-md-10">
       <H3>KARTU KELUARGA</H3>
-      <img src="image/kartu keluarga.jpg" alt="" srcset="" width="100px" height="60px">
+      <img src="image/kartukeluargabaru.png" alt="" srcset="" width="100px" height="60px">
     </div>
-    <div class="col-6 down"><a class="btn" href="https://wa.me/6283806620512" download>DOWNLOAD</a></div>
+    <div class="col down"><a class="btn" href="https://wa.me/6283806620512?text=Izin%20minta%20kartu%20keluarga%20nya?%3F" download>DOWNLOAD</a></div>
   </div>
-  <div class="row kolom d-flex align-items-center">
-    <div class="col-6">
+  <div class="row kolom  ">
+    <div class="col-6 col-md-10">
       <H3>IJAZAH</H3>
       <img src="image/ijazah.jpg" alt="" srcset="" width="100px" height="60px">
     </div>
-    <div class="col-6 down"><a class="btn" href="https://wa.me/6283806620512" download>DOWNLOAD</a></div>
+    <div class="col down"><a class="btn" href="https://wa.me/6283806620512" download>DOWNLOAD</a></div>
   </div>
-  <div class="row kolom d-flex align-items-center">
-    <div class="col-6">
+  <div class="row kolom">
+    <div class="col-6 col-md-10">
       <H3>PHOTO</H3>
       <img src="image/photo.JPG" alt="" srcset="" width="60px" height="100px">
     </div>
-    <div class="col-6 down"><a class="btn" href="https://wa.me/6283806620512" download>DOWNLOAD</a></div>
+    <div class="col down"><a class="btn" href="https://wa.me/6283806620512" download>DOWNLOAD</a></div>
   </div>
 </section>
+
+<!-- Floating button -->
+<a href="https://wa.me/6283806620512" class="floating-btn" title="Chat Me">
+  <img src="image/speech-bubble-5430934_1280.png" alt="Chat Icon">
+</a>
 
 <!-- Memuat Bootstrap JS (Diperlukan jika Anda menggunakan komponen yang memerlukan JavaScript dari Bootstrap) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

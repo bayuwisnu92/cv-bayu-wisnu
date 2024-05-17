@@ -63,6 +63,9 @@
 .lampiran{
   margin-top: 50px;
   padding: 20px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .pend{
   margin-top: 50px;
@@ -81,7 +84,9 @@
   padding: 20px; 
 }
 .kolom{
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 p li{
