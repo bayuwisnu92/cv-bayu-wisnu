@@ -1,5 +1,5 @@
- /* Menyesuaikan warna latar belakang dan teks */
- .navbar-dark .navbar-nav .nav-link {
+/* Navbar */
+.navbar-dark .navbar-nav .nav-link {
   color: #ffffff !important;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -19,91 +19,199 @@
   outline: none;
   border-color: #ffffff;
 }
-#table1 td{
-  padding-right: 10px;
-  padding-bottom: 15px;
-}
-.bold{
-  font-weight: 700;
-}
-/* .navbar{
-  top: 0;
-  position: sticky;
-  z-index: +1;
-  opacity: 0.4;
-} */
-.navbar-toggler-icon{
- background-color: white;
-  /* background-size: cover; /* agar gambar latar belakang memenuhi seluruh area section */
- /* background-repeat: no-repeat;  */
- opacity: 0.6;
+.navbar-toggler-icon {
+  background-color: white;
+  opacity: 0.6;
 }
 .sticky {
   opacity: 0.4;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000; /* pastikan navbar muncul di atas konten */
+  z-index: 1000; /* Ensure navbar appears above content */
 }
-
 .navbar {
-  transition: top 0.3s; /* efek transisi saat navbar berubah posisi */
+  transition: top 0.3s; /* Transition effect for navbar position change */
+}
+.navbar-nav {
+  margin-left: 300px;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar-nav {
+    margin-left: 120px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .navbar-nav {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 989px) {
+  .navbar-nav {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .navbar-nav {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar-nav {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 417px) {
+  .navbar-nav {
+    margin-left: 0px;
+  }
 }
 
+/* Biodata Section */
 .biodata {
   margin-top: 70px;
-   /* Warna border */
- /* Membuat border menjadi lebih melengkung */
-  padding: 20px; /* Memberikan jarak antara konten dan border */
+  padding: 20px;
 }
-.keterampilan{  
-  margin-top: 50px;
-  padding: 20px; 
+.biodata li {
+  margin: 20px 20px;
+  font-weight: 700;
 }
-.lampiran{
+#table1 td {
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+.bold {
+  font-weight: 700;
+}
+
+/* Carousel */
+.carousel-caption {
+  position: absolute;
+  width: 200px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+}
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .carousel-caption {
+    width: 300px;
+  }
+}
+.imager {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .imager {
+    width: 30%;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .imager {
+    width: 30%;
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .imager {
+    width: 30%;
+    margin-bottom: 50px;
+  }
+}
+
+/* Pendidikan Section */
+.pend {
   margin-top: 50px;
-  padding: 20px; 
+  padding: 20px;
+}
+.table th {
+  color: black;
+}
+.table td {
+  color: black;
+}
+.table th, .table td {
+  vertical-align: middle;
+  border: none; /* Remove borders from table cells */
+}
+.table {
+  border: none; /* Remove border from table */
+}
+
+/* Pekerjaan Section */
+.kerja {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+/* Keterampilan Section */
+.keterampilan {
+  margin-top: 50px;
+  padding: 20px;
+}
+.skill-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  margin-bottom: 5px;
+  position: relative;
+}
+.bar::after {
+  content: attr(data-skill);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+}
+.bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #e4a76e; /* Bar color */
+  width: var(--skill-level); /* Skill level */
+}
+
+/* Lampiran Section */
+.lampiran {
+  margin-top: 50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.pend{
-  margin-top: 50px;
-  padding: 20px; 
-}
-.biodata  li{
-  margin: 20px 20px;
-  font-weight: 700;
-}
-#bayu{
-  width: 100%;
+.lampiran-img {
+  width: 50px;
+  height: auto;
 }
 
-.kerja{
-  margin-top: 50px;
-  padding: 20px; 
-}
-.kolom{
-  display: flex;
-  flex-direction: row;
-  
-  /* justify-content: space-between; */
-}
-
-p li{
-  font-size: 30px;
-}
-.btn{
-  /* background-color: rgb(230, 139, 65); */
-  background-image: url("image/lovepik-paper-texture-background-image_400533814.jpg");
-  color: black;
-  border-radius: 20px solid gray ;
-  margin-top: 50px;
-}
-.imager{
-  width: 100%;
-  height: 100%;
-}
+/* Floating Button */
 .floating-btn {
   position: fixed;
   bottom: 20px;
@@ -122,161 +230,22 @@ p li{
   cursor: pointer;
   z-index: 1000;
 }
-.carousel-caption {
-  position: absolute;
-    width: 200px;
-    
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 20px;
-    border-radius: 5px;
-}
 .floating-btn img {
   width: 30px;
   height: 30px;
 }
-.down{
-  margin-left: 150px;
-}
 
+/* Body and Section Background */
+body {
+  background-image: url('image/lovepik-paper-texture-background-image_400533814.jpg');
+  background-size: cover; /* Cover entire area */
+  background-repeat: no-repeat; /* Do not repeat background */
+  opacity: 0.93;
+}
 section {
   background-image: url('image/lovepik-paper-texture-background-image_400533814.jpg');
-  background-size: cover; /* agar gambar latar belakang memenuhi seluruh area section */
-  background-repeat: no-repeat; /* agar gambar latar belakang tidak berulang */
+  background-size: cover; /* Cover entire area */
+  background-repeat: no-repeat; /* Do not repeat background */
   color: black;
   opacity: 0.95;
 }
-
-body{
-  background-image: url('image/lovepik-paper-texture-background-image_400533814.jpg');
-  background-size: cover; /* agar gambar latar belakang memenuhi seluruh area section */
-  background-repeat: no-repeat;
-  opacity: 0.93;
-}
-.table th{
-  color: black;
-}
-.table td{
-  color: black;
-}
-.skill-chart {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.bar {
-  width: 100%;
-  height: 20px;
-  background-color: #ddd;
-  margin-bottom: 5px;
-  position: relative;
-}
-
-.bar::after {
-  content: attr(data-skill);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 5px;
-}
-.table th, .table td {
-  vertical-align: middle;
-  border: none; /* Remove borders from table cells */
-}
-.bold {
-  font-weight: bold;
-}
-.table {
-  border: none; /* Remove border from table */
-}
-
-.bar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #e4a76e; /* Warna batang */
-  width: var(--skill-level); /* Tingkat keterampilan */
-}
-.navbar-nav{
-  margin-left: 300px;
-}
-@media only screen and (max-width: 417px){
-  .navbar-nav{
-    margin-left: 0px;
-
-   }
- }
-
-  @media only screen and (max-width: 600px) {
-   .navbar-nav{
-    margin-left: 0px;
-
-   }
-   section::before{
-    left: -10px;
-    font-size: 64px;
-   }
-   #contact{
-    display: flex;
-    flex-direction: column;
-   }
-   .imager{
-    width: 30%;
-    margin-bottom: 50px;
-   }
-   .carousel-caption{
-    width: 300px;
-   }
-   .down{
-    margin-left: 0px;
-   }
- } 
- @media only screen and (max-width: 700px){
-  .down{
-    margin-left: 0px;
-   }
-   .imager{
-    width: 30%;
-    margin-bottom: 70px;
-   }
- }
- @media only screen and (max-width: 800px){
-  .down{
-    margin-left: 0px;
-   }
-   .imager{
-    width: 30%;
-    margin-bottom: 50px;
-   }
-   .navbar-nav{
-    margin-left: 0px;
-  }
-   
- }
- @media only screen and (max-width: 989px){
-  .down{
-    margin-left: 0px;
-   }
-   .navbar-nav{
-    margin-left: 0;
-  }
- }
- @media only screen and (max-width: 1000px){
-  .down{
-    margin-left: 0px;
-   }
-   .navbar-nav{
-    margin-left: 100px;
-  }
- }
- @media only screen and (max-width: 1200px){
-  
-   .navbar-nav{
-    margin-left: 120px;
-  }
- }
