@@ -30,6 +30,9 @@
   width: 100%;
   z-index: 1000; /* Ensure navbar appears above content */
 }
+#cv{
+  color: white;
+}
 .navbar {
   transition: top 0.3s; /* Transition effect for navbar position change */
 }
