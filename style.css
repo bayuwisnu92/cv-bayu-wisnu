@@ -104,6 +104,10 @@
   width: 100%;
   height: auto;
 }
+.carousel-item {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
 @media only screen and (max-width: 768px) {
   .carousel-item img {
     max-width: 100%;
@@ -237,13 +241,20 @@
 
 /* Body and Section Background */
 body {
-  background-image: url('image/lovepik-paper-texture-background-image_400533814.jpg');
+  /* background-image: url('image/lovepik-paper-texture-background-image_400533814.jpg'); */
+  background-color: black;
   background-size: cover; /* Cover entire area */
   background-repeat: no-repeat; /* Do not repeat background */
   opacity: 0.93;
+  transition: background-color 0.8s;
+  
+}
+#slider{
+  width: 30px;
 }
 section {
   background-image: url('image/lovepik-paper-texture-background-image_400533814.jpg');
+
   background-size: cover; /* Cover entire area */
   background-repeat: no-repeat; /* Do not repeat background */
   color: black;

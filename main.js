@@ -42,3 +42,27 @@ $(document).ready(function(){
     toggleStickyNavbar();
   });
 
+  $('.carousel').carousel({
+    interval: 3000, // Waktu dalam milidetik untuk slide otomatis
+    ride: 'carousel'
+  });
+
+  function ubahWarna() {
+    const slider = document.getElementById('slider');
+    const label = document.getElementById('label');
+    const cv = document.getElementById('cv');
+    
+    if (slider.value == 0) {
+        label.innerText = 'putih';
+        label.style.color = 'white';
+        cv.style.color = 'white';
+        document.body.style.backgroundColor = 'black';
+    } else {
+        label.innerText = 'hitam';
+        // label.style.color = 'black';
+        cv.style.color = 'black';
+        document.body.style.backgroundColor = 'white';
+    }
+}
+  
+

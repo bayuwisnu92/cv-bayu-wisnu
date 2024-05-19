@@ -16,6 +16,10 @@
   </audio> -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Bayu Wisnu Aji</a>
+    <div class="navbar-brand">
+      <input type="range" id="slider" min="0" max="1" step="1" value="0" onchange="ubahWarna()" />
+      <label id="label">putih</label>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
       <span class="navbar-toggler-icon" style="background-color: black;"></span>
       <span class="navbar-text " style="color: rgb(238, 125, 20);">Menu</span>
@@ -42,10 +46,12 @@
         <li class="nav-item">
           <a class="nav-link" href="ht tps://wa.me/6283806620512">Contact</a>
         </li>
+        
       </ul>
     </div>
   </nav>
-<h1 class="container" style="text-align: center; margin-top: 70px;">CV(Curriculum Vitae)</h1>
+  
+<h1 id="cv" class="container" style="text-align: center; margin-top: 70px;">CV(Curriculum Vitae)</h1>
 <section id="biodata" class="biodata container">
   <div class="row">
     <div class="col-lg-9 col-md-9 order-md-1 order-2 mb-10">
