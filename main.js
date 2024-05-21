@@ -53,16 +53,42 @@ $(document).ready(function(){
     const cv = document.getElementById('cv');
     
     if (slider.value == 0) {
-        label.innerText = 'putih';
+        label.innerText = 'malam';
         label.style.color = 'white';
         cv.style.color = 'white';
         document.body.style.backgroundColor = 'black';
     } else {
-        label.innerText = 'hitam';
+        label.innerText = 'siang';
         // label.style.color = 'black';
         cv.style.color = 'black';
         document.body.style.backgroundColor = 'white';
     }
 }
+
+let git = document.getElementById('git');
+
+git.addEventListener('mouseover',function(){
+  git.innerHTML='pergi ke halaman github?'
+});
+git.addEventListener('mouseout', function() {
+  git.innerHTML = 'https://github.com/bayuwisnu92';  
+});
+let kon = document.getElementById('kon');
+
+kon.addEventListener('mouseover',function(){
+  kon.innerHTML='hubungi saya ke whatApp?'
+});
+kon.addEventListener('mouseout', function() {
+  kon.innerHTML = '083806620512';  
+});
+  
+let ala = document.getElementById('ala');
+
+ala.addEventListener('mouseover',function(){
+  ala.innerHTML='Jl. Liogenteng no 71/94b Astanaanyar <br> Rt.005 Rw005 keluaran nyengseret kecamatan astanaanyar'
+});
+ala.addEventListener('mouseout', function() {
+  ala.innerHTML = 'Jl. Liogenteng no 71/94b Astanaanyar';  
+});
   
 

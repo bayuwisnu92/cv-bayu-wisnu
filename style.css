@@ -241,6 +241,16 @@
   width: 30px;
   height: 30px;
 }
+.btn{
+  padding: 5px;
+  background-color: #b44809;
+  border: 1px solid white;
+}
+.btn:hover{
+  background-color: white;
+  border: 1px solid #b44809;
+  color:#b44809 ;
+}
 
 /* Body and Section Background */
 body {
@@ -250,10 +260,11 @@ body {
   background-repeat: no-repeat; /* Do not repeat background */
   opacity: 0.93;
   transition: background-color 0.8s;
+  color: white;
   
 }
 #slider{
-  width: 30px;
+  width: 40px;
 }
 section {
   background-image: url('image/lovepik-paper-texture-background-image_400533814.jpg');
