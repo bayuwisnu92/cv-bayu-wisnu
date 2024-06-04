@@ -65,30 +65,23 @@ $(document).ready(function(){
     }
 }
 
-let git = document.getElementById('git');
+function addHoverEffect(elementId, hoverText, defaultText) {
+  let element = document.getElementById(elementId);
 
-git.addEventListener('mouseover',function(){
-  git.innerHTML='pergi ke halaman github?'
-});
-git.addEventListener('mouseout', function() {
-  git.innerHTML = 'https://github.com/bayuwisnu92';  
-});
-let kon = document.getElementById('kon');
+  element.addEventListener('mouseover', function() {
+    element.innerHTML = hoverText;
+  });
 
-kon.addEventListener('mouseover',function(){
-  kon.innerHTML='hubungi saya ke whatApp?'
-});
-kon.addEventListener('mouseout', function() {
-  kon.innerHTML = '083806620512';  
-});
-  
-let ala = document.getElementById('ala');
+  element.addEventListener('mouseout', function() {
+    element.innerHTML = defaultText;
+  });
+}
 
-ala.addEventListener('mouseover',function(){
-  ala.innerHTML='Jl. Liogenteng no 71/94b Astanaanyar <br> Rt.005 Rw005 keluaran nyengseret kecamatan astanaanyar'
-});
-ala.addEventListener('mouseout', function() {
-  ala.innerHTML = 'Jl. Liogenteng no 71/94b Astanaanyar';  
-});
+// Apply hover effect to the elements
+addHoverEffect('git', 'pergi ke halaman github?', 'https://github.com/bayuwisnu92');
+addHoverEffect('kon', 'hubungi saya ke whatApp?', '083806620512');
+addHoverEffect('ala', 'Jl. Liogenteng no 71/94b Astanaanyar <br> Rt.005 Rw005 keluaran nyengseret kecamatan astanaanyar', 'Jl. Liogenteng no 71/94b Astanaanyar');
+addHoverEffect('porto', 'ke halaman portofolio ?', 'portofolio');
+
   
 
