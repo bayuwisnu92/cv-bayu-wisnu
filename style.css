@@ -36,7 +36,7 @@
 .navbar {
   transition: top 0.3s; /* Transition effect for navbar position change */
 }
-.navbar-nav {
+/* .navbar-nav {
   margin-left: 300px;
 }
 @media only screen and (max-width: 1200px) {
@@ -48,7 +48,7 @@
   .navbar-nav {
     margin-left: 100px;
   }
-}
+} */
 @media only screen and (max-width: 989px) {
   .navbar-nav {
     margin-left: 0;
