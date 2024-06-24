@@ -82,6 +82,7 @@ addHoverEffect('git', 'pergi ke halaman github?', 'https://github.com/bayuwisnu9
 addHoverEffect('kon', 'hubungi saya ke whatApp?', '083806620512');
 addHoverEffect('ala', 'Jl. Liogenteng no 71/94b Astanaanyar <br> Rt.005 Rw005 keluaran nyengseret kecamatan astanaanyar', 'Jl. Liogenteng no 71/94b Astanaanyar');
 addHoverEffect('porto', 'ke halaman portofolio ?', 'portofolio');
+addHoverEffect('more', 'masuk', 'more info');
 
   
 
