@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Bayu Wisnu Aji</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css'); ?>">
+    
     <style>
         .hero {
-            background: url('image/lovepik-paper-texture-background-image_400533814.jpg') no-repeat center center;
+            background: url('image/landingpage.jpg') no-repeat center center;
             background-size: cover;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
@@ -18,6 +18,11 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+        }
+        #more{
+            background-color: none;
+            border: white solid 1px;
+            color: white;
         }
         .hero h1 {
             font-size: 3.5rem;
@@ -41,15 +46,17 @@
             font-size: 1.1rem;
             line-height: 1.6;
         }
+        
     </style>
 </head>
 <body>
 
     <!-- Hero Section -->
     <div class="hero">
+        <img src="image/bayu.png" class="rounded-circle" alt="First Slide" width="100" height="100">
         <h1>Selamat Datang di CV Bayu Wisnu Aji</h1>
         <p>Temukan informasi lengkap tentang pengalaman dan keahlian saya</p>
-        <a href="cv.html" class="btn btn-primary btn-lg">More Info</a>
+        <a href="cv.html" id="more" class="btn ">More Info</a>
     </div>
 
     <!-- Info Section -->
@@ -66,5 +73,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
