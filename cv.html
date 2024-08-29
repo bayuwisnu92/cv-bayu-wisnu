@@ -21,8 +21,7 @@
     <div class="container">
     <a class="navbar-brand" href="index.html">Bayu Wisnu Aji</a>
     <div class="navbar-brand">
-      <input type="range" id="slider" min="0" max="1" step="1" value="0" onchange="ubahWarna()" />
-      <label id="label">malam</label>
+      
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
       <span class="navbar-toggler-icon" style="background-color: black;"></span>
@@ -30,8 +29,8 @@
     </button>
      <!-- Menambahkan teks "Menu" di sini -->
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse me-auto" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
         <li class="nav-item">
           <a class="nav-link" href="#biodata">Biodata</a>
         </li>
@@ -58,7 +57,12 @@
     </div>
   </div>
   </nav>
-  
+  <div class="container d-flex justify-content-start">
+    <label id="label" class="mr-2 mt-2">malam</label>
+  <input type="range" id="slider" min="0" max="1" step="1" value="0" onchange="ubahWarna()" />
+      
+      
+    </div>
 <h1 id="cv" class="container" style="text-align: center; margin-top: 70px;">CV(Curriculum Vitae)</h1>
 <section id="biodata" class="biodata container">
   <div class="row">
