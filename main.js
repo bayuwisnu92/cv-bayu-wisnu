@@ -59,9 +59,9 @@ $(document).ready(function(){
         document.body.style.backgroundColor = 'black';
     } else {
         label.innerText = 'siang';
-        // label.style.color = 'black';
+        label.style.color = 'black';
         cv.style.color = 'black';
-        document.body.style.backgroundColor = 'white';
+        document.body.style.backgroundColor = 'white';  
     }
 }
 
